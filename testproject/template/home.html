@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<table>
+<form method="POST">
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+<!--    {% if str in masterstr %}-->
+<!--     print("Yes")-->
+<!--    {% else %}-->
+<!--    print("NO")-->
+<!--    {% endif %}-->
+
+
+    <input type="submit">
+
+</form>
+
+</table>
+</body>
+</html>
